@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: sans-serif;
   background-color: #19191d;
   font-weight: 300;
 }
@@ -21,7 +21,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: sans-serif;
 }
 
 a {
@@ -180,7 +180,7 @@ h2 {
 }
 
 .control__indicator:after {
-  font-family: 'icomoon';
+  font-family: sans-serif;
   content: '\e5ca';
   position: absolute;
   display: none;
@@ -258,7 +258,7 @@ h2 {
 }
 
 input, select {
-  width: 50%;
+  width: 50% auto;
   padding: 10px 15px;
   margin: 8px;
   border: 1px solid #EE4B2B;
@@ -309,8 +309,30 @@ input, select {
   cursor: pointer;
 }
 
-#favcolor{
-  width:5%;
-  padding:5%;
-  border:1px solid #ccc;
+.output input[type="color"]
+{
+  width: 10px !important; 
+  height: 10px !important;  
+  padding: 15px;
+  border: none;
+  cursor: pointer ;
+}
+
+.output #colorButton  {
+  width: 80px !important; 
+  padding: 15px;
+  border: .5px solid #fff;
+  border-radius: 5px;
+}
+
+.output input[type="submit"]
+{
+  width:auto !important;
+  cursor: pointer;
+  font-family: sans-serif;
+  border: none;
+}
+
+.green-border {
+  border-color: greenyellow;
 }
