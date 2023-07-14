@@ -41,7 +41,7 @@
                 <b style="color:gold">Text box input</b> is used to capture text such as a <b style="color:aqua">name,
                   email, address</b> or any other type of text
             </tr>
-           
+
 
             <tr id="collapseOne" class="collapse" aria-labelledby="headingOne">
               <td colspan="4">
@@ -60,21 +60,22 @@
 
                   <div class="code-box">
                     <code id="code-snippet2">
-                    &lt;input type="email" name="email" placeholder="Enter your email"&gt;
+                    &lt;input type="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required&gt;
                   </code>
                     <button onclick="copyCodeSnippet('code-snippet2')"><i class="fas fa-clipboard"></i> &nbsp;Copy
                       code</button>
                   </div>
 
                   <div class="output">
-                    <input type="text" name="email" placeholder="Enter your email">
-                  </div>
-
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email"
+                      pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+                    <span id="validMsg" "></span>
+                  </div>                 
                 </div>
               </td>
             </tr>
 
-            <tr class="spacer">
+            <tr class=" spacer">
               <td colspan="100"></td>
             </tr>
 
@@ -264,23 +265,55 @@
            <td colspan="100"></td>
          </tr>
 
+          <!--7-->
+          <tr scope="row" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+          aria-controls="collapseSeven" class="clickable-row">
+          <td>7</td>
+          <td>Radio Button</td>
+          <td>
+            <b style="color:gold">Radio buttons </b>let a user <b style="color:aqua">select only one of a limited number of choices</b> from given options
+          </td>
+        </tr>
 
+        <tr id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+          <td colspan="7">
+            <div class="card-body">
+              <div class="code-box">
+                <code id="code-snippet8">
+                  Select OS:<br>
+                    &lt;input type="radio" name="subject" value="Unix"&gt;Unix <br>
+                    &lt;input type="radio" name="subject" value="Linux"&gt;Linux <br>
+                    &lt;input type="radio" name="subject" value="Windows"&gt;Windows <br>
+                    &lt;input type="radio" name="subject" value="MacOS"&gt;MacOS <br>
+        
+            <button onclick="copyCodeSnippet('code-snippet8')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+              code</button>
+          </div>
 
+          <div class="output">
+            <label for="">Select one:</label> <br>
+            <input type="radio" name="subject" value="Web">Web
+            <input type="radio" name="subject" value="Networking">Networking
+            <input type="radio" name="subject" value="Graphics">Graphics
+            <input type="radio" name="subject" value="Python">Python
+          </div>
+      </td>
+    </tr>
+
+    <tr class="spacer">
+      <td colspan="100"></td>
+    </tr>
 
           </tbody>
         </table>
       </div>
     </div>
     <div style="display: flex; justify-content: center;">
-      <button type="button" class="styled-button-pagination">
-        <a href="index3.html">&lt;&lt;</a>
-      </button>
+      <a href="index3.html" class="styled-button-pagination">&lt;&lt;</a>
       &nbsp;&nbsp;
-      <button type="button" class="styled-button-pagination">
-        <a href="index4.html">&gt;&gt;</a>
-      </button>
-
+      <a href="index4.html" class="styled-button-pagination">&gt;&gt;</a>
     </div>
+    
   </div>
 
   <!-- Include jQuery and Bootstrap JS -->

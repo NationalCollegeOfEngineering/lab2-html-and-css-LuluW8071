@@ -1,3 +1,20 @@
+//Add regex pattern validation msg
+var emailInput = document.getElementById('emailInput');
+var validMsg = document.getElementById('validMsg');
+
+emailInput.addEventListener('input', function () {
+    if (emailInput.validity.valid) {
+        validMsg.textContent = 'Valid email address!';
+        validMsg.style.color = 'green';
+        validMsg.style.display = 'block';
+    } else {
+        validMsg.textContent = 'Invalid email address!';
+        validMsg.style.color = 'red';
+        validMsg.style.display = 'block';
+    }
+});
+
+
 // Add an event listener to each clickable row
 const clickableRows = document.querySelectorAll('.clickable-row');
 clickableRows.forEach(row => {
