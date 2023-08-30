@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Include Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Form Elements</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="container">
+      <h2 class="mb-3">HTML Form Elements</h2>
+      <div class="table-responsive custom-table-responsive">
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th scope="col">SN</th>
+              <th scope="col">Form Elements</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--1-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+              aria-controls="collapseOne" class="clickable-row">
+              <td>1</td>
+              <td>Text Box Input</td>
+              <td>
+                <b style="color:gold">Text box input</b> is used to capture text such as a <b style="color:aqua">name,
+                  email, address</b> or any other type of text
+            </tr>
+
+
+            <tr id="collapseOne" class="collapse" aria-labelledby="headingOne">
+              <td colspan="4">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet1">
+                      &lt;input type="text" name="name" placeholder="Enter your name"&gt;
+                    </code>
+                    <button onclick="copyCodeSnippet('code-snippet1')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+
+                  <div class="output">
+                    <input type="text" name="name" placeholder="Enter your name">
+                  </div>
+
+                  <div class="code-box">
+                    <code id="code-snippet2">
+                    &lt;input type="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required&gt;
+                  </code>
+                    <button onclick="copyCodeSnippet('code-snippet2')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+
+                  <div class="output">
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email"
+                      pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+                    <span id="validMsg" "></span>
+                  </div>                 
+                </div>
+              </td>
+            </tr>
+
+            <tr class=" spacer">
+              <td colspan="100"></td>
+            </tr>
+
+            <!--2-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo" class="clickable-row">
+              <td>2</td>
+              <td>Password Input</td>
+              <td>
+                <b style="color:gold">Password input</b> does not show the text as the user types
+              </td>
+            </tr>
+
+            <tr id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+              <td colspan="4">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet3">
+                      &lt;input type="password" name="password" placeholder="Enter your password"&gt;
+                    </code>
+                    <button onclick="copyCodeSnippet('code-snippet3')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+
+                  <div class="output">
+                    <input type="password" name="password" placeholder="Enter your password">
+                  </div>
+
+              </td>
+            </tr>
+
+            <tr class="spacer">
+              <td colspan="100"></td>
+            </tr>
+
+            <!--3-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree" class="clickable-row">
+              <td>3</td>
+              <td>Select Drop Down</td>
+              <td>
+                <b style="color:gold">Drop Down</b> specifies list of options that a user can choose when <b
+                  style="color:aqua">selecting a Drop Down menu</b>
+              </td>
+            </tr>
+
+            <tr id="collapseThree" class="collapse" aria-labelledby="headingThree">
+              <td colspan="4">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet4">
+                      &lt;select name="Programming Language"&gt;<br>
+                        &emsp;&lt;option value="1">Python&lt;/option&gt;<br>
+                        &emsp;&lt;option value="2">C/C++/C#&lt;/option&gt;<br>
+                        &emsp;&lt;option value="3">Java/JavaScript&lt;/option&gt;<br>
+                      &lt;/select&gt;
+                    </code>
+                    <button onclick="copyCodeSnippet('code-snippet4')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+                  <div class="output">
+                    Select your programming language<br>
+                    <select name="Programming Language">
+                      <option value="1">Python</option>
+                      <option value="2">C/C++/C#</option>
+                      <option value="3">Java/JavaScript</option>
+                    </select>
+                  </div>
+
+              </td>
+            </tr>
+
+            <tr class="spacer">
+              <td colspan="100"></td>
+            </tr>
+
+            <!--4-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+              aria-controls="collapseFour" class="clickable-row">
+              <td>4</td>
+              <td>Color Input</td>
+              <td>
+                <b style="color:gold">Color Input </b>lets us pick a <b style="color:aqua">color</b>
+              </td>
+            </tr>
+
+            <tr id="collapseFour" class="collapse" aria-labelledby="headingFour">
+              <td colspan="4">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet5">
+                      Select color <br>
+                      &lt;input type="color" id="favcolor" name="favcolor" value="#000"&gt;
+                    </code>
+                    <button onclick="copyCodeSnippet('code-snippet5')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+                  <div class="output">
+                    Select color &emsp;
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">&emsp; Selected&emsp;
+                    <button id="colorButton"></button>
+                  </div>
+
+              </td>
+            </tr>
+
+            <tr class="spacer">
+              <td colspan="100"></td>
+            </tr>
+
+            <!--5-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+              aria-controls="collapseFive" class="clickable-row">
+              <td>5</td>
+              <td>Checkbox</td>
+              <td>
+                <b style="color:gold">Checkbox</b> is square box that is <b style="color:aqua">ticked</b> when activated
+              </td>
+            </tr>
+
+            <tr id="collapseFive" class="collapse" aria-labelledby="headingFive">
+              <td colspan="5">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet6">
+                    Select any two <br>
+                    &lt;input type="checkbox" name="subject" value="Web"&gt;Web <br>
+                    &lt;input type="checkbox" name="subject" value="networking"&gt;Networking <br>
+                    &lt;input type="checkbox" name="subject" value="graphics"&gt;Graphics <br>
+                    &lt;input type="checkbox" name="subject" value="python"&gt;Python <br>
+                  </code>
+                    <button onclick="copyCodeSnippet('code-snippet6')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                      code</button>
+                  </div>
+                  <div class="output">
+                    <label for="">Select any two</label> <br>
+                    <input type="checkbox" name="subject" value="Web">Web
+                    <input type="checkbox" name="subject" value="networking">Networking
+                    <input type="checkbox" name="subject" value="graphics">Graphics
+                    <input type="checkbox" name="subject" value="python">Python
+                  </div>
+
+              </td>
+            </tr>
+
+            <tr class="spacer">
+              <td colspan="100"></td>
+            </tr>
+
+            <!--6-->
+            <tr scope="row" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+              aria-controls="collapseSix" class="clickable-row">
+              <td>6</td>
+              <td>File Upload</td>
+              <td>
+                <b style="color:gold">File Upload</b> allows users to browse and <b style="color:aqua">select a file</b>
+                from their device
+              </td>
+            </tr>
+
+            <tr id="collapseSix" class="collapse" aria-labelledby="headingSix">
+              <td colspan="6">
+                <div class="card-body">
+                  <div class="code-box">
+                    <code id="code-snippet7">
+                  &lt;form&gt;<br>
+                    &lt;label for="fileUpload">Select a file:&lt;/label&gt;<br>
+                    &lt;input type="file" id="fileUpload" name="fileUpload"&gt;<br>
+                    &lt;input type="submit" value="Upload"&gt;<br>
+                  &lt;/form&gt;
+                 <button onclick="copyCodeSnippet('code-snippet7')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+                   code</button>
+               </div>
+
+               <div class="output">
+                <form>
+                  <label for="fileUpload">Select a file:</label>
+                  <input type="file" id="fileUpload" name="fileUpload">
+                  <input type="submit" value="Upload">
+                </form>
+               </div>
+
+           </td>
+         </tr>
+
+         <tr class="spacer">
+           <td colspan="100"></td>
+         </tr>
+
+          <!--7-->
+          <tr scope="row" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+          aria-controls="collapseSeven" class="clickable-row">
+          <td>7</td>
+          <td>Radio Button</td>
+          <td>
+            <b style="color:gold">Radio buttons </b>let a user <b style="color:aqua">select only one of a limited number of choices</b> from given options
+          </td>
+        </tr>
+
+        <tr id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+          <td colspan="7">
+            <div class="card-body">
+              <div class="code-box">
+                <code id="code-snippet8">
+                  Select OS:<br>
+                    &lt;input type="radio" name="subject" value="Unix"&gt;Unix <br>
+                    &lt;input type="radio" name="subject" value="Linux"&gt;Linux <br>
+                    &lt;input type="radio" name="subject" value="Windows"&gt;Windows <br>
+                    &lt;input type="radio" name="subject" value="MacOS"&gt;MacOS <br>
+        
+            <button onclick="copyCodeSnippet('code-snippet8')"><i class="fas fa-clipboard"></i> &nbsp;Copy
+              code</button>
+          </div>
+
+          <div class="output">
+            <label for="">Select one:</label> <br>
+            <input type="radio" name="subject" value="Web">Web
+            <input type="radio" name="subject" value="Networking">Networking
+            <input type="radio" name="subject" value="Graphics">Graphics
+            <input type="radio" name="subject" value="Python">Python
+          </div>
+      </td>
+    </tr>
+
+    <tr class="spacer">
+      <td colspan="100"></td>
+    </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <a href="index3.html" class="styled-button-pagination">&lt;&lt;</a>
+      &nbsp;&nbsp;
+      <a href="index4.html" class="styled-button-pagination">&gt;&gt;</a>
+    </div>
+    
+  </div>
+
+  <!-- Include jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

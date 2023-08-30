@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Register </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="header">
+    <h1>Welcome to Our <span class="text">Registration Page</span></h1>
+    <p>
+      Thank you for choosing to be a part of our community.
+    </p>
+    <p>
+      By registering, you'll get access to premium content, a personalized experience,
+      timely updates, a vibrant community, and exclusive rewards. <br><br>
+      Join now and unlock a world of possibilities!
+    </p>
+
+  </div>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form action="" method="post">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input class="textbox" id="username" name="username" type="text" placeholder="Username" minlength="4"
+          required />
+        <input id="email" class="textbox" name="email" type="text" placeholder="Email"
+          pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" title="...@gmail.com" required />
+        <input id="phone" name="phone" type="text" placeholder="Phone Number" class="textbox" pattern="^\+977\d{9}$"
+          title="+977XXXXXXXXX" required />
+        <input id="password" name="password" type="password" placeholder="Password" class="textbox" minlength="8"
+          maxlength="16" required />
+        <input id="confirm_password" name="confirm_password" type="password" placeholder="Confirm Password"
+          class="textbox" minlength="8" maxlength="16" required />
+        <button>Sign up</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form action="" method="post">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input id="username" name="username" type="text" placeholder="Username" class="textbox" />
+        <input id="password" name="password" type="password" placeholder="Password" class="textbox" />
+        <button>Login</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
